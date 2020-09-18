@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/1000x800/?<%=@cocktail.name%>);">
+  <div class="container">
+    <h1 class = "display-2"> <%= @cocktail.name.capitalize  %></h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mt-5">
+        <% @cocktail.doses.each_with_index do |dose, index|  %>
+          <h1> <%=index + 1%> - <%= dose.description %> de <%= dose.ingredient.name %> </h1>
+        <% end %>
+      </div>
+      <div class="col-6">
+
+      </div>
+    </div>
+  </div>
+</div>

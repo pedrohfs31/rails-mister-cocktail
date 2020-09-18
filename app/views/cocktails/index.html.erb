@@ -1,0 +1,23 @@
+<h1> Cocktails: </h1>
+  <div class="container">
+    <div class="cards">
+      <% @cocktails.each do |cocktail|  %>
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/random/1000x800/?<%=cocktail.name%>" class="card-img-top" alt="cocktail-image">
+          <div class="card-body">
+            <h5 class="card-title"><%= cocktail.name %></h5>
+            <p class="card-text">Ingredientes:
+              <ul>
+                <% cocktail.ingredients.each do |ingredient|  %>
+                  <li>
+                    <%= ingredient.name  %>
+                  </li>
+                <% end %>
+              </ul>
+            </p>
+            <%= link_to "Deguste", cocktail_path(cocktail), class: "btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
