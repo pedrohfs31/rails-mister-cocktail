@@ -8,6 +8,8 @@
         <% @cocktail.doses.each_with_index do |dose, index|  %>
           <h1> <%=index + 1%> - <%= dose.description %> de <%= dose.ingredient.name %> </h1>
         <% end %>
+        <br>
+        <%= link_to "Voltar aos Cocktails", cocktails_path, class: "btn btn-primary"  %>
       </div>
       <div class="col-6">
 
