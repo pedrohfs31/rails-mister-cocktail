@@ -8,7 +8,7 @@ class DosesController < ApplicationController
   end
 
   def create
-    raise
+
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
     if @dose.save

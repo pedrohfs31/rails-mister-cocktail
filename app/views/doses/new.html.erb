@@ -1,12 +1,14 @@
-<% @ingredients.each do |ingredient| %>
-  <span> <%= ingredient.name %> </span>
-<% end %>
+<h3 class="text-center mt-5">Add a new dose</h3>
+ <div class="main">
+  <div class="class="container mt-5 pt-5">
+    <div class="w-50 mx-auto py-3 px-4 border">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+      <%= f.input :description %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+</div>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :ingredient, collection: Ingredient.all %>
-  <%= f.input :description %>
 
-  <%= f.button :submit, class: 'btn btn-primary' %>
-
-
-<% end %>

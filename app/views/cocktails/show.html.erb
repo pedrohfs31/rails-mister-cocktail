@@ -9,6 +9,9 @@
           <h1> <%=index + 1%> - <%= dose.description %> de <%= dose.ingredient.name %> </h1>
         <% end %>
         <br>
+        <%= link_to "Adicionar Doses ao Drink", new_cocktail_dose_path(@cocktail), class: "btn btn-primary"  %>
+        <br>
+        <br>
         <%= link_to "Voltar aos Cocktails", cocktails_path, class: "btn btn-primary"  %>
       </div>
       <div class="col-6">

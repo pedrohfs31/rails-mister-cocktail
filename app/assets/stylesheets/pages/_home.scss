@@ -10,13 +10,13 @@ h1{
   font-weight: bold;
 }
 nav {
-  background: {
-    image: asset_url("caipira.jpeg");
-    repeat: no-repeat;
-    attachment: fixed;
-    position: center;
-    background-size: cover;
-  }
+  // background: {
+  //   image: asset_url("caipira.jpeg");
+  //   repeat: no-repeat;
+  //   attachment: fixed;
+  //   position: center;
+  //   background-size: cover;
+  // }
   display: flex;
   justify-content: space-around;
 }
@@ -25,15 +25,15 @@ nav .btn {
   color:white;
 }
 
-body {
-  background: {
-    image: asset_url("caipira.jpeg");
-    repeat: no-repeat;
-    attachment: fixed;
-    position: center;
-    background-size: cover;
-  }
-}
+// body {
+//   background: {
+//     image: asset_url("caipira.jpeg");
+//     repeat: no-repeat;
+//     attachment: fixed;
+//     position: center;
+//     background-size: cover;
+//   }
+// }
 
 
 // .cards {
