@@ -1,25 +1,61 @@
 // Specific CSS for your home-page
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px;
+// body{
+//   background-image: url("../../../../../rails-mister-cocktail/app/assets/images/body-background.jpg");
+// }
+h1{
+  margin: 0;
+  color: white ;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+nav {
+  background: {
+    image: asset_url("caipira.jpeg");
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center;
+    background-size: cover;
+  }
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (max-width: 960px){
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4px;
-}
+nav .btn {
+  color:white;
 }
 
-@media (max-width: 576px){
+body {
+  background: {
+    image: asset_url("caipira.jpeg");
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center;
+    background-size: cover;
+  }
+}
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2px;
-}
-}
+
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 8px;
+// }
+
+// @media (max-width: 960px){
+
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap: 4px;
+// }
+// }
+
+// @media (max-width: 576px){
+
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-gap: 2px;
+// }
+// }
