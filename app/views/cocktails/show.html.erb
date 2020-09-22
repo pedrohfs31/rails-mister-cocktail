@@ -1,5 +1,4 @@
-background_url = ''
-<% if @cocktail.photo.attached? %>
+ <% if @cocktail.photo.attached? %>
           <% background_url = cl_image_path @cocktail.photo.key, crop: :fill %>
         <% else %>
           <% background_url = 'https://source.unsplash.com/random' %>
